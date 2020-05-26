@@ -2,7 +2,7 @@ using System;
 
 namespace Game
 {
-    public class Player
+    public class Player : IPlayer
     {
         public readonly string _name;
 
@@ -11,19 +11,24 @@ namespace Game
             _name = name;
         }
 
-        public void Attack()
-        {
-            Console.Write($"{_name} attacked!\n");
+        public string Name()
+        {   
+            return _name;
         }
 
-        public void Defend()
+        public string Attack()
         {
-            Console.Write($"{_name} defended!\n");
+            return $"{_name} attacked!\n";
         }
 
-        public void Flee()
+        public string Defend()
         {
-            Console.Write($"{_name} run away!\n");
+            return $"{_name} defended!\n";
+        }
+
+        public string Flee()
+        {
+            return $"{_name} run away!\n";
         }
     }
 }
