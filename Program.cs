@@ -6,7 +6,10 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var playerOne = new Player("Bob");
+            var game = new Game(playerOne);
+
+            game.Start();
         }
-    } 
+    }
 }
