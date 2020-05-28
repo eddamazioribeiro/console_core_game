@@ -2,25 +2,31 @@ namespace Game
 {
     public class NPC : IPlayer
     {
-        
+        private string _name;
+
+        public NPC(string name = "Foe")
+        {
+            _name = name;
+        }
+
         public string Name()
         {
-            return $"{Name()}";
+            return _name;
         }
         
         public string Attack()
         {
-            return $"{Name()} attacked!";
+            return $"{Name()} attacked!\n";
         }
 
         public string Defend()
         {
-            return $"{Name()} defended!";
+            return $"{Name()} defended!\n";
         }
 
         public string Flee()
         {
-            return $"{Name()} fled!";
+            return $"{Name()} fled!\n";
         }
     }
 }

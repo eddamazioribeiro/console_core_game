@@ -6,7 +6,7 @@ namespace Game
     {
         public readonly string _name;
 
-        public Player(string name)
+        public Player(string name = "Hero")
         {
             _name = name;
         }

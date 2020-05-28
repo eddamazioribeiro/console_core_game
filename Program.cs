@@ -6,8 +6,9 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            var playerOne = new Player("Bob");
-            var game = new Game(playerOne);
+            var playerOne = new Player();
+            var playerTwo = new NPC("Foe");
+            var game = new Game(playerOne, playerTwo);
 
             game.Start();
         }
