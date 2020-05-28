@@ -1,6 +1,7 @@
+using Game.Interface;
 using System;
 
-namespace Game
+namespace Game.Lib
 {
     public class Player : IPlayer
     {

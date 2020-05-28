@@ -1,4 +1,6 @@
-namespace Game
+using Game.Interface;
+
+namespace Game.Lib
 {
     public class NPC : IPlayer
     {
